@@ -1,7 +1,6 @@
-2020-11-18 17:01:58,625 - logs... - ERROR - hello world
-2020-11-18 17:03:49,452 - logs... - INFO - resultPath../../babTest\result\report.html
-2020-11-18 17:03:49,452 - logs... - INFO - caseListFileC:\Users\MagicData\Desktop\自动化\babTest\testFile\caselist.txt
-2020-11-18 17:03:49,452 - logs... - INFO - caseList[]
-2020-11-18 17:39:31,500 - logs... - INFO - resultPath../../babTest\result\report.html
-2020-11-18 17:39:31,501 - logs... - INFO - caseListFileC:\Users\MagicData\Desktop\自动化\babTest\testFile\caselist.txt
-2020-11-18 17:39:31,501 - logs... - INFO - caseList[]
+2020-11-23 10:31:04,201 - logs... - INFO - resultPath../../babTest\result\report.html
+2020-11-23 10:31:04,201 - logs... - INFO - caseListFileE:\标啊标\babTest\testFile\caselist.txt
+2020-11-23 10:31:04,201 - logs... - INFO - caseList[]
+2020-11-23 10:40:27,230 - logs... - INFO - resultPath../../babTest\result\report.html
+2020-11-23 10:40:27,230 - logs... - INFO - caseListFileE:\标啊标\babTest\testFile\caselist.txt
+2020-11-23 10:40:27,230 - logs... - INFO - caseList[]

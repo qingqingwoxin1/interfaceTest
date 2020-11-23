@@ -23,7 +23,7 @@ class testTaskTypeInfo(unittest.TestCase):
         print('测试开始前的准备')
 
     def test_get_longvoice_list(self):
-        passq
+        pass
 
 
 

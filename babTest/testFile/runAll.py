@@ -46,7 +46,7 @@ class AllTest:#定义一个类AllTest
             case_name = case.split("/")[-1]#通过split函数来将aaa/bbb分割字符串，-1取后面，0取前面
             # print(case_name+".py")#打印出取出来的名称
             #批量加载用例，第一个参数为用例存放路径，第一个参数为路径文件名
-            discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=case_name + '.py', top_level_dir=None)
+            discover = unittest.defaultTestLoader.discover("../testcase", pattern=case_name + '.py', top_level_dir=None)
             suite_module.append(discover)#将discover存入suite_module元素组
             # print('suite_module:'+str(suite_module))
         if len(suite_module) > 0:#判断suite_module元素组是否存在元素
