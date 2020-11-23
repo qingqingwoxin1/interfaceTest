@@ -16,7 +16,7 @@ class AllTest:#定义一个类AllTest
         global resultPath
         resultPath = os.path.join(report_path, "report.html")#result/report.html
         self.caseListFile = os.path.join(path, "caselist.txt")#配置执行哪些测试文件的配置文件路径
-        self.caseFile = os.path.join(absolute_path,"testCase")#真正的测试断言文件路径
+        self.caseFile = os.path.join(absolute_path,"testcase")#真正的测试断言文件路径
         self.caseList = []
         log.info('resultPath'+resultPath)#将resultPath的值输入到日志，方便定位查看问题
         log.info('caseListFile'+self.caseListFile)#同理
