@@ -1,1 +1,3 @@
 user/testLogin
+user/testgetStatement
+user/testTaskTypeInfo

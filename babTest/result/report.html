@@ -178,9 +178,9 @@
         
     <div class='page-header'>
         <h1>Test Report</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2020-11-23 10:40:27</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:00.198856</p>
-<p class='attribute'><strong>状态:</strong> 通过 1 失败 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2020-11-24 17:12:30</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:00.680180</p>
+<p class='attribute'><strong>状态:</strong> 通过 4 错误 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>Test Description</p></div>
@@ -237,32 +237,112 @@
     </td>
 </tr>
 
-    <tr class='failClass'>
+    <tr class='passClass'>
         <td>paramunittest.testLogin_1</td>
         <td>1</td>
-        <td>0</td>
         <td>1</td>
+        <td>0</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c2',1)">详情</a></td>
     </tr>
 
-<tr id='ft2.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_login</div></td>
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        失败</a>
-    <div id='div_ft2.1' class="popup_window">
-        <pre>ft2.1: 测试开始前的准备
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        通过</a>
+    <div id='div_pt2.1' class="popup_window">
+        <pre>pt2.1: 测试开始前的准备
 测试结束，输出log日志，完结
 
 
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testGetStatement_0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c3',1)">详情</a></td>
+    </tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_into_statement</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        通过</a>
+    <div id='div_pt3.1' class="popup_window">
+        <pre>pt3.1: 测试开始前准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testGetStatement_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c4',1)">详情</a></td>
+    </tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_into_statement</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        通过</a>
+    <div id='div_pt4.1' class="popup_window">
+        <pre>pt4.1: 测试开始前准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='errorClass'>
+        <td>unittest.loader._FailedTest</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="javascript:showClassDetail('c5',1)">详情</a></td>
+    </tr>
+
+<tr id='ft5.1' class='none'>
+    <td class='errorCase'><div class='testcase'>testTaskTypeInfo</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+        错误</a>
+    <div id='div_ft5.1' class="popup_window">
+        <pre>ft5.1: ImportError: Failed to import test module: testTaskTypeInfo
 Traceback (most recent call last):
-  File "E:\标啊标\babTest\testcase\testLogin.py", line 58, in test_login
-    self.checkResult()
-  File "E:\标啊标\babTest\testcase\testLogin.py", line 79, in checkResult
-    self.assertEqual(self.expect_code, ss['code'])
-AssertionError: 10001 != 100001
+  File "C:\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "E:\标啊标\babTest\testcase\testTaskTypeInfo.py", line 20, in &lt;module&gt;
+    class testTaskTypeInfo(unittest.TestCase):
+  File "C:\Python38\lib\site-packages\paramunittest.py", line 82, in magic_module_set_test_case
+    raise TypeError('%s does not have a setParameters method.' % (
+TypeError: testTaskTypeInfo does not have a setParameters method.
+
 </pre>
     </div>
     <!--css div popup end-->
@@ -271,10 +351,10 @@ AssertionError: 10001 != 100001
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>2</td>
-            <td>1</td>
-            <td>1</td>
+            <td>5</td>
+            <td>4</td>
             <td>0</td>
+            <td>1</td>
             <td>&nbsp;</td>
         </tr>
     </table>
@@ -307,9 +387,9 @@ AssertionError: 10001 != 100001
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:1, name:'通过'},
-                        {value:1, name:'失败'},
-                        {value:0, name:'错误'}
+                        {value:4, name:'通过'},
+                        {value:0, name:'失败'},
+                        {value:1, name:'错误'}
                     ],
                     itemStyle: {
                         emphasis: {

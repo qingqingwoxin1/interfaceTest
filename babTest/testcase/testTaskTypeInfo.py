@@ -13,9 +13,10 @@ from common.util import Utility
 
 
 readconfig = ReadConfig()
-login_xls = readExcel().get_xls('userCase.xlsx','taskTypeInfo')
+taskTypeInfo_xls = readExcel().get_xls('userCase.xlsx','taskTypeInfo')
 util = Utility()
 
+@paramunittest.parametrized(*taskTypeInfo_xls)
 class testTaskTypeInfo(unittest.TestCase):
     def setUp(self):
         """
@@ -34,21 +35,19 @@ class testTaskTypeInfo(unittest.TestCase):
         data = dict(urllib.parse.parse_qsl(
             urllib.parse.urlsplit(
                 new_url).query))  # 将一个完整的URL中的name=&password=转换为{'username':'xxx','password':'bbb'}
-        # 调用util进行加密
-        username = util.md5_join_b64(data["user_name"])
-        user_pwd = util.md5_join_b64(data["user_pwd"])
-        # 把加密后的值在替换到相应的位置
-        data["user_name"] = username
-        data["user_pwd"] = user_pwd
+        # # 调用util进行加密
+        # username = util.md5_join_b64(data["user_name"])
+        # user_pwd = util.md5_join_b64(data["user_pwd"])
+        # # 把加密后的值在替换到相应的位置
+        # data["user_name"] = username
+        # data["user_pwd"] = user_pwd
         info = RunMain().run_main(self.request_method, url, data,
                                   files=None)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = info.json()  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
-        if self.case_name == 'login_success':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == 'taskTypeInfo_success':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(self.expect_code, ss['code'])
-        if self.case_name == 'login_error':  # 同上
+        if self.case_name == 'taskTypeInfo_error':  # 同上
             self.assertEqual(self.expect_code, ss['code'])
-
-
 
     def tearDown(self):
         """
@@ -56,3 +55,7 @@ class testTaskTypeInfo(unittest.TestCase):
                :return:
                """
         print('测试结束，输出log日志，完结\n\n')
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
+
