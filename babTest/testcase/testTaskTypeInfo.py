@@ -5,12 +5,12 @@ import unittest
 import paramunittest
 import urllib.parse
 
+
 from testFile.geturlParams import geturlParams
 from testFile.readConfig import ReadConfig
 from testFile.readExcel import readExcel
 from common.configHttp import RunMain
 from common.util import Utility
-
 
 readconfig = ReadConfig()
 taskTypeInfo_xls = readExcel().get_xls('userCase.xlsx','taskTypeInfo')
@@ -18,11 +18,36 @@ util = Utility()
 
 @paramunittest.parametrized(*taskTypeInfo_xls)
 class testTaskTypeInfo(unittest.TestCase):
-    def setUp(self):
+    def setParameters(self, case_no, case_name, path, parameter, method, expect_result, expect_content):
         """
-
+               :param case_no:
+               :param case_name:
+               :param parameter:
+               :param method:
+               :param expect_result:
+               :param path:
+               :param expect_content:
                :return:
                """
+        self.case_no = str(case_no)
+        self.case_name = str(case_name)
+        self.request_path = str(path)
+        self.request_data = str(parameter)
+        self.request_method = str(method)
+        self.expect_code = int(expect_result)
+        self.expect_content = str(expect_content)
+
+    def description(self):
+        """
+        test report description
+        :return:
+        """
+        self.case_name
+
+    def setUp(self):
+        """
+        :return:
+        """
         print('测试开始前的准备')
 
     def test_get_longvoice_list(self):
@@ -52,8 +77,8 @@ class testTaskTypeInfo(unittest.TestCase):
     def tearDown(self):
         """
 
-               :return:
-               """
+        :return:
+        """
         print('测试结束，输出log日志，完结\n\n')
 
 if __name__ == '__main__':
