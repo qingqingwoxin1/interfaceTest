@@ -1,0 +1,1 @@
+"SELECT *  FROM `m_project` WHERE `expire_time` > {} AND `stat` = 1 AND `type` IN ('21') ORDER BY create_time desc LIMIT 0,15"

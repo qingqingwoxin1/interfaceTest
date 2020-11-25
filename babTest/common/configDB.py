@@ -60,15 +60,21 @@ class DB:
 
     def del_user(self,table_name,field_name,value):
         self.exec("delete from {} where {} = '{}'".format(table_name,field_name,value))
+    def test(self,sql):
+        #做数据库断言
+        self.cur.execute(sql)
+        result = self.cur.fetchall()
+        return result
 
 if __name__ == '__main__':
     db = DB()  # 实例化一个数据库操作对象
-    project_number = '个人不带测试001'
-    project_table = 'm_project'
-    project_name = 'project_name'
-    res = db.query(project_table,project_name,project_number)
-    print(res)
-    if res:
-        print('返回成功')
+    # project_number = '个人不带测试001'
+    # project_table = 'm_project'
+    # project_name = 'project_name'
+    # res = db.query(project_table,project_name,project_number)
+    # print(res)
+    # if res:
+    #     print('返回成功')
+    db.test()
 
 
