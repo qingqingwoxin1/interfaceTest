@@ -77,6 +77,7 @@ class testLogin(unittest.TestCase):
         ss = info.json()  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         if self.case_name == 'login_success':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(self.expect_code, ss['code'])
+
         if self.case_name == 'login_error':  # 同上
             self.assertEqual(self.expect_code, ss['code'])
 
