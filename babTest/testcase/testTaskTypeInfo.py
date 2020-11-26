@@ -74,7 +74,7 @@ class testTaskTypeInfo(unittest.TestCase):
             # res=db.test(f.read().format(now_time))
             res = db.test(sql)
             len01=len(res)
-            self.assertEqual(len01,len(ss))
+            self.assertEqual(len01,len(ss["data"]))
         if self.case_name == 'taskTypeInfo_error':  # 同上
             self.assertEqual(self.expect_code, ss['code'])
 
