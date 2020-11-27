@@ -21,6 +21,7 @@ class ReadConfig():
     def get_mysql(self,name):
         value = config.get('DATABASE',name)
         return value
+
     def get_version(self,name):
         value = config.get('VERSION',name)
         return value
@@ -37,5 +38,9 @@ class ReadConfig():
         value = config.get('TOKEN',name)
         return value
 
+    def get_userid(self,name):
+        value = config.get('USERID',name)
+        return value
+
 if __name__ == '__main__':
-    print('version的值为：',ReadConfig().get_http('baseurl first'))
+    print('userid的值为：',ReadConfig().get_userid('userid'))
