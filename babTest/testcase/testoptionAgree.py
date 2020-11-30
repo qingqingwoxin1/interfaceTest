@@ -4,23 +4,26 @@
 import unittest
 import paramunittest
 import urllib.parse
-import time
 
 
+#导入相应的方法
 from testFile.geturlParams import geturlParams
 from testFile.readConfig import ReadConfig
 from testFile.readExcel import readExcel
 from common.configHttp import RunMain
 from common.util import Utility
 from common.configDB import DB
+
+#实例化参数
 readconfig = ReadConfig()
-taskTypeInfo_xls = readExcel().get_xls('userCase.xlsx','taskTypeInfo')
+optionAgree_xls = readExcel().get_xls('userCase.xlsx','optionAgree')
 util = Utility()
 db=DB()
-headers = {'token':readconfig.get_token('token'),'userid':readconfig.get_userid('userid')}
 
-@paramunittest.parametrized(*taskTypeInfo_xls)
-class testTaskTypeInfo(unittest.TestCase):
+
+@paramunittest.parametrized(*optionAgree_xls)
+class addProjectAudit(unittest.TestCase):
+    #实例化Excel表中的数据
     def setParameters(self, case_no, case_name, path, parameter, method, expect_result, expect_content):
         """
                :param case_no:
@@ -53,28 +56,22 @@ class testTaskTypeInfo(unittest.TestCase):
         """
         print('测试开始前的准备')
 
-    def test_get_longvoice_list(self):
-        self.checkResult()
+    def test_add_project_audit(self):
+        self.chechResult()
 
-    def checkResult(self):
+    def chechResult(self):
         url = geturlParams().get_url(readconfig.get_http('baseurl_first'),
                                      self.request_path)  # 调用我们的geturlParams获取我们拼接的url
         new_url = url + self.request_data
         data = dict(urllib.parse.parse_qsl(
             urllib.parse.urlsplit(
                 new_url).query))  # 将一个完整的URL中的name=&password=转换为{'username':'xxx','password':'bbb'}
-        info = RunMain().run_main(self.request_method, url, headers,data,
+        info = RunMain().run_main(self.request_method, url, data,
                                   files=None)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = info.json()  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
-        if self.case_name == 'taskTypeInfo_success':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == 'optionAgree_success':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(self.expect_code, ss['code'])
-        #     数据库断言，判断taskTypeInfo响应列表的长度是否与m_project查询的长度一致
-            now_time=time.time()
-            sql="SELECT *  FROM `m_project` WHERE `expire_time` > {} AND `stat` = 1 AND `type` IN ('21') ORDER BY create_time desc LIMIT 0,15".format(now_time)
-            res = db.test(sql)
-            len01=len(res)
-            self.assertEqual(len01,len(ss["data"]))
-        if self.case_name == 'taskTypeInfo_error':  # 同上
+        if self.case_name == 'optionAgree_error':  # 同上
             self.assertEqual(self.expect_code, ss['code'])
 
     def tearDown(self):
@@ -82,8 +79,7 @@ class testTaskTypeInfo(unittest.TestCase):
 
         :return:
         """
-        print('测试结束，输出log日志，完结\n\n')
+        print('测试结束，输出log')
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
-

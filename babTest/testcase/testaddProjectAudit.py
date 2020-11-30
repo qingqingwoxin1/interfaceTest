@@ -6,7 +6,7 @@ import paramunittest
 import urllib.parse
 import time
 
-#导入相应的方法
+# 导入相应的方法
 from testFile.geturlParams import geturlParams
 from testFile.readConfig import ReadConfig
 from testFile.readExcel import readExcel
@@ -14,16 +14,16 @@ from common.configHttp import RunMain
 from common.util import Utility
 from common.configDB import DB
 
-#实例化参数
+# 实例化参数
 readconfig = ReadConfig()
-addProjectAudit_xls = readExcel().get_xls('userCase.xlsx','addProjectAudit')
+addProjectAudit_xls = readExcel().get_xls('userCase.xlsx', 'addProjectAudit')
 util = Utility()
-db=DB()
+db = DB()
 
 
 @paramunittest.parametrized(*addProjectAudit_xls)
 class addProjectAudit(unittest.TestCase):
-    #实例化Excel表中的数据
+    # 实例化Excel表中的数据
     def setParameters(self, case_no, case_name, path, parameter, method, expect_result, expect_content):
         """
                :param case_no:
@@ -66,12 +66,11 @@ class addProjectAudit(unittest.TestCase):
         data = dict(urllib.parse.parse_qsl(
             urllib.parse.urlsplit(
                 new_url).query))  # 将一个完整的URL中的name=&password=转换为{'username':'xxx','password':'bbb'}
-        info = RunMain().run_main(self.request_method, url, data,
-                                  files=None)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+        info = RunMain().run_main(self.request_method,url,data)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = info.json()  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
-        if self.case_name == 'taskTypeInfo_success':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == 'addProjectAudit_success':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(self.expect_code, ss['code'])
-        if self.case_name == 'taskTypeInfo_error':  # 同上
+        if self.case_name == 'addProjectAudit_error':  # 同上
             self.assertEqual(self.expect_code, ss['code'])
 
     def tearDown(self):
@@ -80,3 +79,7 @@ class addProjectAudit(unittest.TestCase):
         :return:
         """
         print('测试结束，输出log')
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
