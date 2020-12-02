@@ -19,7 +19,9 @@ readconfig = ReadConfig()
 addProjectAudit_xls = readExcel().get_xls('userCase.xlsx', 'addProjectAudit')
 util = Utility()
 db = DB()
-
+# 准备数据
+p_id=440
+user_id=15
 
 @paramunittest.parametrized(*addProjectAudit_xls)
 class addProjectAudit(unittest.TestCase):
@@ -55,7 +57,10 @@ class addProjectAudit(unittest.TestCase):
         :return:
         """
         print('测试开始前的准备')
-
+    #     数据检查，检查数据表m_project_member是否存在要查询的记录，若存在则删除
+        sql="select * from m_project_member where p_id=673 and user_id=9"
+        if self.case_name=="addProjectAudit_success":
+            db.del_user("m_project_member","p_id=673 and user_id=9")
     def test_add_project_audit(self):
         self.chechResult()
 
@@ -70,6 +75,8 @@ class addProjectAudit(unittest.TestCase):
         ss = info.json()  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         if self.case_name == 'addProjectAudit_success':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(self.expect_code, ss['code'])
+        #     数据表断言，检查接口是否新增成功，是否写入到表
+            self.assertTrue(db.check_user("user"))
         if self.case_name == 'addProjectAudit_error':  # 同上
             self.assertEqual(self.expect_code, ss['code'])
 
@@ -78,7 +85,10 @@ class addProjectAudit(unittest.TestCase):
 
         :return:
         """
+        if self.case_name=="addProjectAudit_error":
+            db.del_user("m_project_member","p_id=673 and user_id=9")
         print('测试结束，输出log')
+
 
 
 if __name__ == '__main__':

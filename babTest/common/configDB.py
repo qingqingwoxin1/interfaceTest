@@ -31,11 +31,11 @@ class DB:
         #关闭数据库
         self.coon.close()
 
-    def query(self,table_name,field_name,value):
+    def query(self,table_name,value):
         #检查连接是否断开，如果断开就进行重连
         self.coon.ping(reconnect=True)
         # value需加单引号，否则报错
-        sql = "select * from {} where {} = '{}'".format(table_name,field_name,value)
+        sql = "select * from {} where {}".format(table_name,value)
         # 使用execute执行sql
         self.cur.execute(sql)
         # 使用fetchall获取查询结果
@@ -58,8 +58,9 @@ class DB:
         result = self.query(table_name,field_name,value)
         return True if result else False
 
-    def del_user(self,table_name,field_name,value):
-        self.exec("delete from {} where {} = '{}'".format(table_name,field_name,value))
+    def del_user(self,table_name,field_name=None,value=None):
+        # self.exec("delete from {} where {} = '{}'".format(table_name,field_name,value))
+        self.exec("delete from {} where {}".format(table_name,value))
     def test(self,sql):
         #做数据库断言
         self.cur.execute(sql)

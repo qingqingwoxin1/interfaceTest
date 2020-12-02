@@ -3,7 +3,7 @@
 import xlsxwriter
 
 # 创建一个excel
-workbook = xlsxwriter.Workbook("chart_column.xlsx")
+workbook = xlsxwriter.Workbook("../result/chart_column.xlsx")
 # 创建一个sheet
 worksheet = workbook.add_worksheet()
 # worksheet = workbook.add_worksheet("bug_analysis")
