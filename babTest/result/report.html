@@ -178,9 +178,9 @@
         
     <div class='page-header'>
         <h1>Test Report</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2020-11-25 17:38:46</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:00.319974</p>
-<p class='attribute'><strong>状态:</strong> 通过 6</p>
+    <p class='attribute'><strong>开始时间:</strong> 2020-12-03 18:19:18</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:00.698786</p>
+<p class='attribute'><strong>状态:</strong> 通过 8 失败 2</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>Test Description</p></div>
@@ -315,26 +315,32 @@
     </td>
 </tr>
 
-    <tr class='passClass'>
+    <tr class='failClass'>
         <td>paramunittest.testTaskTypeInfo_0</td>
         <td>1</td>
-        <td>1</td>
         <td>0</td>
+        <td>1</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c5',1)">详情</a></td>
     </tr>
 
-<tr id='pt5.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_longvoice_list</div></td>
+<tr id='ft5.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_get_longvoice_list</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
-        通过</a>
-    <div id='div_pt5.1' class="popup_window">
-        <pre>pt5.1: 测试开始前的准备
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+        失败</a>
+    <div id='div_ft5.1' class="popup_window">
+        <pre>ft5.1: 测试开始前的准备
 测试结束，输出log日志，完结
 
 
+Traceback (most recent call last):
+  File "E:\标啊标\babTest\testcase\testTaskTypeInfo.py", line 57, in test_get_longvoice_list
+    self.checkResult()
+  File "E:\标啊标\babTest\testcase\testTaskTypeInfo.py", line 69, in checkResult
+    self.assertEqual(self.expect_code, ss['code'])
+AssertionError: 200 != 301
 </pre>
     </div>
     <!--css div popup end-->
@@ -367,11 +373,113 @@
     </td>
 </tr>
 
+    <tr class='passClass'>
+        <td>paramunittest.addProjectAudit_0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c7',1)">详情</a></td>
+    </tr>
+
+<tr id='pt7.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_project_audit</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.1')" >
+        通过</a>
+    <div id='div_pt7.1' class="popup_window">
+        <pre>pt7.1: 测试开始前的准备
+测试结束，输出log
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.addProjectAudit_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c8',1)">详情</a></td>
+    </tr>
+
+<tr id='pt8.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_project_audit</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.1')" >
+        通过</a>
+    <div id='div_pt8.1' class="popup_window">
+        <pre>pt8.1: 测试开始前的准备
+测试结束，输出log
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.addProjectAudit_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c9',1)">详情</a></td>
+    </tr>
+
+<tr id='ft9.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_add_project_audit</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft9.1')" >
+        失败</a>
+    <div id='div_ft9.1' class="popup_window">
+        <pre>ft9.1: 测试开始前的准备
+测试结束，输出log
+Traceback (most recent call last):
+  File "E:\标啊标\babTest\testcase\testoptionAgree.py", line 60, in test_add_project_audit
+    self.chechResult()
+  File "E:\标啊标\babTest\testcase\testoptionAgree.py", line 73, in chechResult
+    self.assertEqual(self.expect_code, ss['code'])
+AssertionError: 200 != 201
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.addProjectAudit_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c10',1)">详情</a></td>
+    </tr>
+
+<tr id='pt10.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_project_audit</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt10.1')" >
+        通过</a>
+    <div id='div_pt10.1' class="popup_window">
+        <pre>pt10.1: 测试开始前的准备
+测试结束，输出log
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
         <tr id='total_row'>
             <td>总计</td>
-            <td>6</td>
-            <td>6</td>
-            <td>0</td>
+            <td>10</td>
+            <td>8</td>
+            <td>2</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -405,8 +513,8 @@
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:6, name:'通过'},
-                        {value:0, name:'失败'},
+                        {value:8, name:'通过'},
+                        {value:2, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {
