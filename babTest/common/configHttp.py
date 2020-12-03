@@ -3,7 +3,6 @@
 """
 
 import requests
-import json
 from testFile.readConfig import ReadConfig
 
 readconfig = ReadConfig()
@@ -11,22 +10,22 @@ headers = {'token': readconfig.get_token('token'), 'userid': readconfig.get_user
 
 
 class RunMain():
-    def send_post(self, url=None, data=None, files=None, headers=None):
+    def send_post(self, url=None, data=None, files=None):
         # 封装post请求，参数按照顺序传入
         result = requests.post(url=url, headers=headers, data=data, files=files)  # 因为这里要封装post方法，所以这里的url和data值不能写死
         # res = json.dumps(result.json(), ensure_ascii=False, sort_keys=True,separators=(',',':'))
         return result
 
     def send_get(self, url=None, data=None):
-        result = requests.get(url=url, params=data)
+        result = requests.get(url=url, params=data,headers=headers)
         # result = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return result
 
-    def run_main(self, method, url, headers=None, data=None,
+    def run_main(self, method, url, data=None,
                  files=None):  # 定义一个run_main函数，通过传过来的method来进行不同的get或post请求,URL,DATA和files为空，不然报错
         res = None
         if method == 'post':
-            res = self.send_post(url=url, headers=headers, data=data, files=files)
+            res = self.send_post(url=url, data=data, files=files)
         elif method == 'get':
             res = self.send_get(url=url, data=data)
         else:
@@ -41,5 +40,5 @@ if __name__ == '__main__':
     url = "http://test.speech.imagicdatatech.com/index.php/Api/Login/login?"
     data = {'user_name': '06f07c9872f28b7a8bae8ee00cd63b96MTU5MDAwMDAwMDA=',
             'user_pwd': 'f0edcf18976257492aadc5ea8c80a779MTIzNDU2', 'device_token': 'android'}
-    res = run.send_post(url, headers, data)
+    res = run.send_post(url, headers, data).text
     print(res)

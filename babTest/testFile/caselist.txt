@@ -1,3 +1,5 @@
 user/testLogin
 user/testgetStatement
 user/testTaskTypeInfo
+user/testaddProjectAudit
+user/testoptionAgree

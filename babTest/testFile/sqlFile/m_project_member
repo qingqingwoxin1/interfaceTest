@@ -1,0 +1,2 @@
+delete from m_project_member where p_id=673 and user_id=15
+select * from m_project_member where p_id=673 and user_id=15

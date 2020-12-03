@@ -63,8 +63,7 @@ class testTaskTypeInfo(unittest.TestCase):
         data = dict(urllib.parse.parse_qsl(
             urllib.parse.urlsplit(
                 new_url).query))  # 将一个完整的URL中的name=&password=转换为{'username':'xxx','password':'bbb'}
-        info = RunMain().run_main(self.request_method, url, headers,data,
-                                  files=None)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+        info = RunMain().run_main(self.request_method, url, headers,data)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = info.json()  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         if self.case_name == 'taskTypeInfo_success':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(self.expect_code, ss['code'])

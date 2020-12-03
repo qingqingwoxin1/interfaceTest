@@ -14,7 +14,7 @@
       <file leaf-file-name="testLogin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/testLogin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="272">
               <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
               <folding>
                 <element signature="e#38#53#0" expanded="true" />
@@ -23,53 +23,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configDB.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/configDB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-192">
-              <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Column_chart.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/Column_chart.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pie_chart.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/Pie_chart.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="testoptionAgree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/testoptionAgree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="84" column="30" lean-forward="false" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+            <state relative-caret-position="152">
+              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testaddProjectAudit.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testTaskTypeInfo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testcase/testTaskTypeInfo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="871">
+              <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testaddProjectAudit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/testaddProjectAudit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="51" column="11" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+            <state relative-caret-position="272">
+              <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
               <folding>
                 <element signature="e#38#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configHttp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/configHttp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding>
+                <element signature="e#57#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,21 +70,9 @@
       <file leaf-file-name="testgetStatement.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/testgetStatement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configHttp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/configHttp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-              <folding>
-                <element signature="e#57#72#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -145,18 +125,20 @@
         <option value="$PROJECT_DIR$/testcase/testgetStatement.py" />
         <option value="$PROJECT_DIR$/common/Parameter.py" />
         <option value="$PROJECT_DIR$/testcase/testLogin.py" />
-        <option value="$PROJECT_DIR$/testFile/caselist.txt" />
         <option value="$PROJECT_DIR$/testFile/sqlFile/m_project" />
-        <option value="$PROJECT_DIR$/testFile/config.ini" />
         <option value="$PROJECT_DIR$/testFile/readConfig.py" />
-        <option value="$PROJECT_DIR$/testcase/testTaskTypeInfo.py" />
         <option value="$PROJECT_DIR$/testcase/testoptionAgree.py" />
         <option value="$PROJECT_DIR$/common/1.py" />
-        <option value="$PROJECT_DIR$/common/configHttp.py" />
         <option value="$PROJECT_DIR$/common/Column_chart.py" />
         <option value="$PROJECT_DIR$/common/Pie_chart.py" />
+        <option value="$PROJECT_DIR$/testFile/config.ini" />
         <option value="$PROJECT_DIR$/common/configDB.py" />
+        <option value="$PROJECT_DIR$/common/configHttp.py" />
+        <option value="$PROJECT_DIR$/testFile/sqlFile/m_project_member" />
         <option value="$PROJECT_DIR$/testcase/testaddProjectAudit.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/testFile/caselist.txt" />
+        <option value="$PROJECT_DIR$/testcase/testTaskTypeInfo.py" />
       </list>
     </option>
   </component>
@@ -235,6 +217,12 @@
               <item name="testFile" type="462c0819:PsiDirectoryNode" />
               <item name="case" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="babTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="babTest" type="462c0819:PsiDirectoryNode" />
+              <item name="testFile" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlFile" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -262,41 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in testaddProjectAudit.py">
-    <configuration name="Column_chart" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="babTest" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/Column_chart.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="Pie_chart" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="babTest" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/Pie_chart.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in testTaskTypeInfo.py">
     <configuration name="Unittests in testLogin.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,6 +263,20 @@
       <module name="babTest" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/testLogin.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in testTaskTypeInfo.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="babTest" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/testTaskTypeInfo.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="Unittests in testaddProjectAudit.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -339,20 +307,34 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/testgetStatement.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <configuration name="Unittests in testoptionAgree.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="babTest" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/testoptionAgree.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testaddProjectAudit.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testLogin.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Column_chart" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Pie_chart" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testgetStatement.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testoptionAgree.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testgetStatement.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testLogin.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testTaskTypeInfo.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testaddProjectAudit.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Pie_chart" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testTaskTypeInfo.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testLogin.py" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testgetStatement.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Column_chart" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testLogin.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testaddProjectAudit.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testoptionAgree.py" />
       </list>
     </recent_temporary>
   </component>
@@ -373,35 +355,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_testLogin_py - 2020.11.30 at 11h 58m 01s.xml">
+    <history-entry file="Unittests_in_testLogin_py - 2020.12.03 at 17h 17m 52s.xml">
       <configuration name="Unittests in testLogin.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.11.30 at 11h 42m 45s.xml">
+    <history-entry file="Unittests_in_testTaskTypeInfo_py - 2020.12.03 at 17h 17m 59s.xml">
+      <configuration name="Unittests in testTaskTypeInfo.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_testTaskTypeInfo_py - 2020.12.03 at 17h 19m 14s.xml">
+      <configuration name="Unittests in testTaskTypeInfo.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.12.03 at 15h 05m 06s.xml">
       <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.11.30 at 11h 46m 59s.xml">
+    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.12.03 at 15h 05m 15s.xml">
       <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.11.30 at 11h 49m 45s.xml">
+    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.12.03 at 15h 07m 32s.xml">
       <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.11.30 at 11h 50m 00s.xml">
+    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.12.03 at 15h 15m 09s.xml">
       <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.11.30 at 11h 54m 11s.xml">
+    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.12.03 at 17h 17m 39s.xml">
       <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.11.30 at 11h 56m 17s.xml">
-      <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.12.02 at 10h 21m 39s.xml">
-      <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_testaddProjectAudit_py - 2020.12.02 at 16h 44m 31s.xml">
-      <configuration name="Unittests in testaddProjectAudit.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_testgetStatement_py - 2020.12.02 at 10h 17m 19s.xml">
+    <history-entry file="Unittests_in_testgetStatement_py - 2020.12.03 at 17h 17m 46s.xml">
       <configuration name="Unittests in testgetStatement.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_testoptionAgree_py - 2020.12.03 at 17h 06m 50s.xml">
+      <configuration name="Unittests in testoptionAgree.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -412,12 +394,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28741866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23210412" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39479393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39370933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -445,25 +427,25 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/common/configHttp.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/testcase/testaddProjectAudit.py</url>
-          <line>94</line>
+          <line>97</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/configHttp.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/testcase/testaddProjectAudit.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="48" />
+          <line>81</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="49" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -472,20 +454,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python38/Lib/site-packages/xlrd/book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="475" column="29" lean-forward="false" selection-start-line="475" selection-start-column="29" selection-end-line="475" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python38/Lib/unittest/result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/math.py" />
     <entry file="file://C:/Python38/Lib/site-packages/pip/_vendor/requests/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -498,13 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/geturlParams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -668,14 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python38/Lib/unittest/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1155">
@@ -693,14 +646,6 @@
           <folding>
             <element signature="e#0#9#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/sqlFile/m_project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="0" column="126" lean-forward="true" selection-start-line="0" selection-start-column="126" selection-end-line="0" selection-end-column="126" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,24 +672,6 @@
         <state relative-caret-position="201">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/testTaskTypeInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="e#38#53#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,24 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/readConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/configHttp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#57#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/Column_chart.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -814,9 +723,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/sqlFile/m_project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="0" column="126" lean-forward="true" selection-start-line="0" selection-start-column="126" selection-end-line="0" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/sqlFile/m_project_member">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/configDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/readConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/geturlParams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/testaddProjectAudit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
+          <folding>
+            <element signature="e#38#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/testLogin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="272">
           <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
           <folding>
             <element signature="e#38#53#0" expanded="true" />
@@ -826,35 +809,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/testoptionAgree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="84" column="30" lean-forward="false" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+        <state relative-caret-position="152">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/configDB.py">
+    <entry file="file://$PROJECT_DIR$/common/configHttp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="162">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#57#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/testgetStatement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/testaddProjectAudit.py">
+    <entry file="file://$PROJECT_DIR$/testcase/testTaskTypeInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="51" column="11" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-          <folding>
-            <element signature="e#38#53#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="871">
+          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
