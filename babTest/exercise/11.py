@@ -1,10 +1,14 @@
-# ﻿#!/usr/bin/env python
+﻿# ﻿#!/usr/bin/env python
 
 import pprint
+
+from bson import ObjectId
 
 from pymongo import MongoClient
 
 from testFile.readConfig import ReadConfig
+
+
 
 readConfig = ReadConfig()
 
@@ -19,7 +23,11 @@ password = ReadConfig().get_MongoDB('password')
 database = ReadConfig().get_MongoDB('database')
 
 
+
+
+
 class MainMongodb(object):
+
     def __init__(self, host=host, port=port, username=username, password=password, database=database):
 
         """
@@ -48,6 +56,8 @@ class MainMongodb(object):
 
         self.database = database
 
+
+
     def create_or_connect_mongodb(self):
 
         """
@@ -70,11 +80,15 @@ class MainMongodb(object):
 
                                  authSource=self.database)
 
+
+
             return client[self.database]
 
         except Exception as e:
 
             raise str(e)
+
+
 
     def get_collection(self, collection_name):
 
@@ -93,6 +107,8 @@ class MainMongodb(object):
         collection = dbm[collection_name]
 
         return collection
+
+
 
     def find_one(self, collection_name, kwargs={}):
 
@@ -114,6 +130,8 @@ class MainMongodb(object):
 
         return result_obj
 
+
+
     def find_all(self, collection_name):
 
         """
@@ -129,6 +147,8 @@ class MainMongodb(object):
         cursor = collection.find()
 
         return cursor
+
+
 
     def find_conditions(self, collection_name, limit=0, **kwargs):
 
@@ -158,6 +178,8 @@ class MainMongodb(object):
 
         return cursor.to_list(length=None)
 
+
+
     def count(self, collection_name, kwargs={}):
 
         """
@@ -179,6 +201,8 @@ class MainMongodb(object):
         print('%s documents in collection' % n)
 
         return n
+
+
 
     def replace_id(self, collection_name, condition={}, new_doc={}):
 
@@ -218,6 +242,8 @@ class MainMongodb(object):
 
             return {'status': 'fail', 'info': str(_id) + ':: not exist !!!'}
 
+
+
     def update(self, collection_name, condition={}, new_part={}):
 
         """
@@ -243,6 +269,8 @@ class MainMongodb(object):
         new_document = collection.find_one(condition)
 
         print('document is now %s' % pprint.pformat(new_document))
+
+
 
     def replace(self, collection_name, condition={}, new_doc={}):
 
@@ -274,6 +302,8 @@ class MainMongodb(object):
 
         print('document is now %s' % pprint.pformat(new_document))
 
+
+
     def update_many(self, collection_name, condition={}, new_part={}):
 
         """
@@ -295,6 +325,8 @@ class MainMongodb(object):
         result = collection.update_many(condition, {'$set': new_part})
 
         print('updated %s document' % result.modified_count)
+
+
 
     def insert_one(self, collection_name, new_doc=None):
 
@@ -324,6 +356,8 @@ class MainMongodb(object):
 
             return str(e)
 
+
+
     def insert_many(self, collection_name, new_doc={}):
 
         """
@@ -351,6 +385,8 @@ class MainMongodb(object):
         except Exception as e:
 
             return str(e)
+
+
 
     def delete_many(self, collection_name, condition={}):
 
@@ -381,10 +417,13 @@ class MainMongodb(object):
         return result
 
 
+
+
+
 if __name__ == '__main__':
+
     mongodb = MainMongodb()
-    # print(mongodb.get_collection("goods").find_one())
-    res=mongodb.delete_many("goods",{"name":"goodsName1"})
+
+    res=mongodb.find_one("markconf",{"p_id":5303,"text":"test1"})
+
     print(res)
-    # find = mongodb.find_one("goods")
-    # print(find)

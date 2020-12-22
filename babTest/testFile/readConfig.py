@@ -42,5 +42,9 @@ class ReadConfig():
         value = config.get('USERID',name)
         return value
 
+    def get_MongoDB(self,name):
+        value = config.get('MONGODB',name)
+        return value
+
 if __name__ == '__main__':
-    print('userid的值为：',ReadConfig().get_userid('userid'))
+    print('mongodb host的值为：',ReadConfig().get_MongoDB("host"))

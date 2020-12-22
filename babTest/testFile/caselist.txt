@@ -3,3 +3,6 @@ user/testgetStatement
 user/testTaskTypeInfo
 user/testaddProjectAudit
 user/testoptionAgree
+user/testgetCollect
+user/testcollectProjectAudit
+user/testInfo
