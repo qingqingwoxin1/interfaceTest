@@ -72,6 +72,6 @@ if __name__ == '__main__':
     # if res:
     #     print('返回成功')
     # db.test()
-    sql="select * from m_project_member where p_id=673 and user_id=9"
+    sql="select * from m_project_member where p_id=436 "
     res=db.query(sql)
     print(res)

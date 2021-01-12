@@ -20,7 +20,7 @@ util = Utility()
 # url = geturlParams().get_url(readConfig.get_http('baseurl_first'),'')
 
 @paramunittest.parametrized(*Info_xls)
-class testLogin(unittest.TestCase):
+class testInfo(unittest.TestCase):
     def setParameters(self, case_no, case_name, path, parameter, method, expect_result, expect_content):
         """
                :param case_no:
@@ -56,7 +56,7 @@ class testLogin(unittest.TestCase):
         """
         print('测试开始前的准备')
 
-    def test_login(self):
+    def test_Info(self):
         self.checkResult()
 
     def checkResult(self):  # 断言

@@ -178,9 +178,9 @@
         
     <div class='page-header'>
         <h1>Test Report</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2020-12-21 18:41:41</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:04.639891</p>
-<p class='attribute'><strong>状态:</strong> 通过 6 失败 6</p>
+    <p class='attribute'><strong>开始时间:</strong> 2021-01-11 17:49:49</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:02.829431</p>
+<p class='attribute'><strong>状态:</strong> 通过 14 失败 5 错误 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>Test Description</p></div>
@@ -263,32 +263,26 @@
     </td>
 </tr>
 
-    <tr class='failClass'>
+    <tr class='passClass'>
         <td>paramunittest.testGetStatement_0</td>
         <td>1</td>
-        <td>0</td>
         <td>1</td>
+        <td>0</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c3',1)">详情</a></td>
     </tr>
 
-<tr id='ft3.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_into_statement</div></td>
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_into_statement</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
-        失败</a>
-    <div id='div_ft3.1' class="popup_window">
-        <pre>ft3.1: 测试开始前准备
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        通过</a>
+    <div id='div_pt3.1' class="popup_window">
+        <pre>pt3.1: 测试开始前准备
 测试结束，输出log日志，完结
 
 
-Traceback (most recent call last):
-  File "E:\标啊标\babTest\testcase\testgetStatement.py", line 52, in test_into_statement
-    self.checkResult()
-  File "E:\标啊标\babTest\testcase\testgetStatement.py", line 71, in checkResult
-    self.assertEqual(self.expect_code, ss['code'])
-AssertionError: 200 != 301
 </pre>
     </div>
     <!--css div popup end-->
@@ -321,32 +315,32 @@ AssertionError: 200 != 301
     </td>
 </tr>
 
-    <tr class='failClass'>
+    <tr class='errorClass'>
         <td>paramunittest.testTaskTypeInfo_0</td>
         <td>1</td>
         <td>0</td>
-        <td>1</td>
         <td>0</td>
+        <td>1</td>
         <td><a href="javascript:showClassDetail('c5',1)">详情</a></td>
     </tr>
 
 <tr id='ft5.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_get_longvoice_list</div></td>
+    <td class='errorCase'><div class='testcase'>test_TaskTypeInfo</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
-        失败</a>
+        错误</a>
     <div id='div_ft5.1' class="popup_window">
         <pre>ft5.1: 测试开始前的准备
 测试结束，输出log日志，完结
 
 
 Traceback (most recent call last):
-  File "E:\标啊标\babTest\testcase\testTaskTypeInfo.py", line 57, in test_get_longvoice_list
+  File "E:\标啊标\babTest\testcase\testTaskTypeInfo.py", line 57, in test_TaskTypeInfo
     self.checkResult()
-  File "E:\标啊标\babTest\testcase\testTaskTypeInfo.py", line 69, in checkResult
-    self.assertEqual(self.expect_code, ss['code'])
-AssertionError: 200 != 301
+  File "E:\标啊标\babTest\testcase\testTaskTypeInfo.py", line 82, in checkResult
+    len01=len(res)
+TypeError: object of type 'bool' has no len()
 </pre>
     </div>
     <!--css div popup end-->
@@ -363,7 +357,7 @@ AssertionError: 200 != 301
     </tr>
 
 <tr id='pt6.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_longvoice_list</div></td>
+    <td class='none'><div class='testcase'>test_TaskTypeInfo</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.1')" >
@@ -547,12 +541,226 @@ AssertionError: 200 != 100
     </td>
 </tr>
 
+    <tr class='passClass'>
+        <td>paramunittest.testInfo_0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c13',1)">详情</a></td>
+    </tr>
+
+<tr id='pt13.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Info</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt13.1')" >
+        通过</a>
+    <div id='div_pt13.1' class="popup_window">
+        <pre>pt13.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testInfo_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c14',1)">详情</a></td>
+    </tr>
+
+<tr id='pt14.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Info</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt14.1')" >
+        通过</a>
+    <div id='div_pt14.1' class="popup_window">
+        <pre>pt14.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testindex_0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c15',1)">详情</a></td>
+    </tr>
+
+<tr id='pt15.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_index</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt15.1')" >
+        通过</a>
+    <div id='div_pt15.1' class="popup_window">
+        <pre>pt15.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testindex_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c16',1)">详情</a></td>
+    </tr>
+
+<tr id='pt16.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_index</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt16.1')" >
+        通过</a>
+    <div id='div_pt16.1' class="popup_window">
+        <pre>pt16.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.TestProjectInfo_0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c17',1)">详情</a></td>
+    </tr>
+
+<tr id='pt17.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_projectInfo</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt17.1')" >
+        通过</a>
+    <div id='div_pt17.1' class="popup_window">
+        <pre>pt17.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.TestProjectInfo_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c18',1)">详情</a></td>
+    </tr>
+
+<tr id='pt18.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_projectInfo</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt18.1')" >
+        通过</a>
+    <div id='div_pt18.1' class="popup_window">
+        <pre>pt18.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.TestcheckDataTime_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c19',1)">详情</a></td>
+    </tr>
+
+<tr id='ft19.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_checkDataTime</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft19.1')" >
+        失败</a>
+    <div id='div_ft19.1' class="popup_window">
+        <pre>ft19.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+Traceback (most recent call last):
+  File "E:\标啊标\babTest\testcase\testcheckDataTime.py", line 60, in test_checkDataTime
+    self.checkResult()
+  File "E:\标啊标\babTest\testcase\testcheckDataTime.py", line 78, in checkResult
+    self.assertEqual(self.expect_code, ss['code'])
+AssertionError: 200 != 1401
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.TestcheckDataTime_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c20',1)">详情</a></td>
+    </tr>
+
+<tr id='pt20.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_checkDataTime</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt20.1')" >
+        通过</a>
+    <div id='div_pt20.1' class="popup_window">
+        <pre>pt20.1: 测试开始前的准备
+测试结束，输出log日志，完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
         <tr id='total_row'>
             <td>总计</td>
-            <td>12</td>
-            <td>6</td>
-            <td>6</td>
-            <td>0</td>
+            <td>20</td>
+            <td>14</td>
+            <td>5</td>
+            <td>1</td>
             <td>&nbsp;</td>
         </tr>
     </table>
@@ -585,9 +793,9 @@ AssertionError: 200 != 100
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:6, name:'通过'},
-                        {value:6, name:'失败'},
-                        {value:0, name:'错误'}
+                        {value:14, name:'通过'},
+                        {value:5, name:'失败'},
+                        {value:1, name:'错误'}
                     ],
                     itemStyle: {
                         emphasis: {

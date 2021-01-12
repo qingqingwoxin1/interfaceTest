@@ -58,10 +58,13 @@ class Utility:
 
 if __name__ == '__main__':
 
-    @Utility.print_run_time
-    def fun1():
-        for i in range(100000):
-            pass
+    # @Utility.print_run_time
+    # def fun1():
+    #     for i in range(100000):
+    #         pass
+    #
+    #
+    # fun1()
+    res = Utility.md5_join_b64("1590000000")
+    print(res)
 
-
-    fun1()

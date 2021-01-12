@@ -59,11 +59,11 @@ class testGetStatement(unittest.TestCase):
             urllib.parse.urlsplit(
                 new_url).query))  # 将一个完整的URL中的name=&password=转换为{'username':'xxx','password':'bbb'}
         # 调用util进行加密
-        # username = util.md5_join_b64(data["user_name"])
-        # user_pwd = util.md5_join_b64(data["user_pwd"])
+        username = util.md5_join_b64(data.get("p_id",""))
+        user_pwd = util.md5_join_b64(data.get("user_id",""))
         # # 把加密后的值在替换到相应的位置
-        # data["user_name"] = username
-        # data["user_pwd"] = user_pwd
+        data["p_id"] = username
+        data["user_id"] = user_pwd
         info = RunMain().run_main(self.request_method, url, data,
                                   files=None)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = info.json()  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应

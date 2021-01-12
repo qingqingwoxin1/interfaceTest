@@ -6,3 +6,6 @@ user/testoptionAgree
 user/testgetCollect
 user/testcollectProjectAudit
 user/testInfo
+user/testIndex
+user/testProjectInfo
+user/testcheckDataTime
